@@ -7,6 +7,214 @@
     <title>Brainware Uniersity | Virtual Parent-Teacher Platform</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <style>
+    /* General Reset */
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        /* Responsive Typography */
+        html {
+        font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+        html {
+            font-size: 14px;
+        }
+        }
+
+        @media (max-width: 480px) {
+        html {
+            font-size: 12px;
+        }
+        }
+
+        /* Container */
+        .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        /* Header */
+        header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        header .logo {
+        flex: 1;
+        text-align: center;
+        }
+
+        header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        }
+
+        header nav ul li {
+        margin: 0 10px;
+        }
+
+        header nav ul li a {
+        text-decoration: none;
+        color: #333;
+        }
+
+        header .mobile-menu {
+        display: none;
+        }
+
+        @media (max-width: 768px) {
+        header nav ul {
+            display: none;
+        }
+
+        header .mobile-menu {
+            display: block;
+            cursor: pointer;
+        }
+        }
+
+        @media (max-width: 480px) {
+        header .logo h1 {
+            font-size: 1.5rem;
+        }
+
+        header nav ul li {
+            margin: 0 5px;
+        }
+        }
+
+        /* Hero Section */
+        .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        }
+
+        .hero .hero-content {
+        flex: 1;
+        }
+
+        .hero .hero-image {
+        flex: 1;
+        }
+
+        .hero .hero-image img {
+        max-width: 100%;
+        height: auto;
+        }
+
+        @media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+        }
+        }
+
+        @media (max-width: 480px) {
+        .hero .hero-content h1 {
+            font-size: 1.5rem;
+        }
+
+        .hero .hero-content p {
+            font-size: 0.9rem;
+        }
+        }
+
+        /* Features Section */
+        .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        }
+
+        @media (max-width: 480px) {
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+        }
+
+        /* Testimonials Section */
+        .testimonial-slider {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        }
+
+        .testimonial {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        }
+
+        .slider-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        @media (max-width: 768px) {
+        .testimonial-slider {
+            flex-direction: column;
+        }
+        }
+
+        @media (max-width: 480px) {
+        .testimonial .quote p {
+            font-size: 0.9rem;
+        }
+
+        .testimonial .user-info h4 {
+            font-size: 1rem;
+        }
+        }
+
+        /* Footer */
+        .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+        .footer-col {
+        flex: 1;
+        margin: 10px;
+        }
+
+        .footer-col ul {
+        list-style: none;
+        }
+
+        .footer-col ul li {
+        margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-col {
+            text-align: center;
+        }
+        }
+
+        @media (max-width: 480px) {
+        .footer-col ul li {
+            font-size: 0.9rem;
+        }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
